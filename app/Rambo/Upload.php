@@ -2,6 +2,7 @@
 
 namespace App\Rambo;
 
+use AngryMoustache\PageArchitect\Http\Livewire\PageArchitectField;
 use AngryMoustache\Rambo\Models\Administrator as ModelsAdministrator;
 use AngryMoustache\Rambo\Rambo\Administrator;
 use AngryMoustache\Rambo\Resource\Fields\AttachmentField;
@@ -40,7 +41,8 @@ class Upload extends Resource
             TextField::make('slug')
                 ->sortable(),
 
-            EditorField::make('description')
+            PageArchitectField::make('description')
+                ->label('Body')
                 ->hideFrom(['index']),
 
             TextField::make('link')

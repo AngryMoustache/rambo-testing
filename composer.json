@@ -12,6 +12,7 @@
         "angry-moustache/deviantart-rss": "dev-master",
         "angry-moustache/media": "9999999-dev",
         "angry-moustache/rambo": "9999999-dev",
+        "angry-moustache/page-architect": "9999999-dev",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
