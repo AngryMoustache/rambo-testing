@@ -15,4 +15,18 @@ return [
         Upload::class,
         Tag::class,
     ],
+
+    // 'resources' => [
+    //     Administrator::class,
+    //     'Website' => [
+    //         Attachment::class,
+    //         Page::class,
+    //     ],
+    //     'Uploads' => [
+    //         Upload::class,
+    //         'Tags' => [
+    //             Tag::class,
+    //         ],
+    //     ],
+    // ],
 ];

@@ -16,6 +16,7 @@ use AngryMoustache\Rambo\Resource\Fields\SelectField;
 use AngryMoustache\Rambo\Resource\Fields\TextareaField;
 use AngryMoustache\Rambo\Resource\Fields\TextField;
 use AngryMoustache\Rambo\Resource\Fields\YoutubeField;
+use AngryMoustache\Rambo\Resource\Filters\OnlineFilter;
 use AngryMoustache\Rambo\Resource\Resource;
 use AngryMoustache\Rambo\Resource\Traits\Sluggable;
 
@@ -35,6 +36,21 @@ class Upload extends Resource
     public function fields()
     {
         return [
+            // TabGroup::make()
+            //     ->tabs([
+            //         'general' => 'General',
+            //         'media' => 'Media',
+            //     ])
+            //     ->fields([
+            //         'general' => [
+            //         ],
+            //         'media' => [
+            //             YoutubeField::make('youtube_id')
+            //                 ->label('Youtube video')
+            //                 ->hideFrom(['index']),
+            //         ],
+            //     ]),
+
             TextField::make('name')
                 ->rules('required')
                 ->sortable(),
@@ -77,5 +93,12 @@ class Upload extends Resource
     public function sortedQuery()
     {
         return $this->query()->orderBy('name', 'asc');
+    }
+
+    public function filters()
+    {
+        return [
+            OnlineFilter::class,
+        ];
     }
 }
