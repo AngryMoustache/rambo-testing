@@ -78,7 +78,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AngryMoustache/page-architect.git",
-                "reference": "b4c1b950a5e30827d949038573ff13e8b886a482"
+                "reference": "e8ceeeacda3c47995cc5a42a7391d0559b706636"
             },
             "require": {
                 "angry-moustache/rambo": "dev-master",
@@ -106,7 +106,7 @@
                 "MIT"
             ],
             "description": "Package for making complicated pages in Rambo",
-            "time": "2021-05-24T18:30:43+00:00"
+            "time": "2021-05-24T19:20:51+00:00"
         },
         {
             "name": "angry-moustache/rambo",
