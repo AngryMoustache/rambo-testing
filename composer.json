@@ -8,7 +8,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.4",
+        "php": "^8.0",
         "angry-moustache/deviantart-rss": "dev-master",
         "angry-moustache/media": "9999999-dev",
         "angry-moustache/rambo": "9999999-dev",
