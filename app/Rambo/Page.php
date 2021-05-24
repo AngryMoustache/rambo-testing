@@ -5,6 +5,7 @@ namespace App\Rambo;
 use AngryMoustache\PageArchitect\Resource\Fields\PageArchitect;
 use AngryMoustache\Rambo\Resource\Fields\BooleanField;
 use AngryMoustache\Rambo\Resource\Fields\Button;
+use AngryMoustache\Rambo\Resource\Fields\EditorField;
 use AngryMoustache\Rambo\Resource\Fields\TextField;
 use AngryMoustache\Rambo\Resource\Resource;
 use AngryMoustache\Rambo\Resource\Traits\Sluggable;
