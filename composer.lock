@@ -78,7 +78,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AngryMoustache/page-architect.git",
-                "reference": "24eea8db9dabe8460bebb8fe90f979eaf50add13"
+                "reference": "41eb35731c77e43031c233bb02d34b7cd9c2171f"
             },
             "require": {
                 "angry-moustache/rambo": "dev-master",
@@ -106,7 +106,7 @@
                 "MIT"
             ],
             "description": "Package for making complicated pages in Rambo",
-            "time": "2021-05-24T09:01:33+00:00"
+            "time": "2021-05-24T12:45:33+00:00"
         },
         {
             "name": "angry-moustache/rambo",
@@ -114,7 +114,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AngryMoustache/rambo.git",
-                "reference": "c8d3092126ea18cd7d8f4398eef00567dc083a51"
+                "reference": "0bf4a50340cf2c30f7d8a7941b3bc7710fc87b27"
             },
             "require": {
                 "angry-moustache/media": "dev-master",
@@ -143,7 +143,7 @@
                 "MIT"
             ],
             "description": "Package for making forms",
-            "time": "2021-05-24T09:00:51+00:00"
+            "time": "2021-05-24T12:45:08+00:00"
         },
         {
             "name": "asm89/stack-cors",
