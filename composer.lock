@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cce82a653cb298c8783cb8e871314a7d",
+    "content-hash": "d2a75ee67e4e739d6e4b63626788de3b",
     "packages": [
         {
             "name": "angry-moustache/deviantart-rss",
@@ -100,12 +100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AngryMoustache/page-architect.git",
-                "reference": "1b2ea98d0ab30431b104149f81fbe2c21c6d1624"
+                "reference": "24eea8db9dabe8460bebb8fe90f979eaf50add13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AngryMoustache/page-architect/zipball/1b2ea98d0ab30431b104149f81fbe2c21c6d1624",
-                "reference": "1b2ea98d0ab30431b104149f81fbe2c21c6d1624",
+                "url": "https://api.github.com/repos/AngryMoustache/page-architect/zipball/24eea8db9dabe8460bebb8fe90f979eaf50add13",
+                "reference": "24eea8db9dabe8460bebb8fe90f979eaf50add13",
                 "shasum": ""
             },
             "require": {
@@ -139,7 +139,7 @@
                 "issues": "https://github.com/AngryMoustache/page-architect/issues",
                 "source": "https://github.com/AngryMoustache/page-architect/tree/master"
             },
-            "time": "2021-05-23T13:35:48+00:00"
+            "time": "2021-05-24T09:01:33+00:00"
         },
         {
             "name": "angry-moustache/rambo",
@@ -147,12 +147,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AngryMoustache/rambo.git",
-                "reference": "8fba3161fd765ed9f189531d0a0e4310076126f6"
+                "reference": "c8d3092126ea18cd7d8f4398eef00567dc083a51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AngryMoustache/rambo/zipball/8fba3161fd765ed9f189531d0a0e4310076126f6",
-                "reference": "8fba3161fd765ed9f189531d0a0e4310076126f6",
+                "url": "https://api.github.com/repos/AngryMoustache/rambo/zipball/c8d3092126ea18cd7d8f4398eef00567dc083a51",
+                "reference": "c8d3092126ea18cd7d8f4398eef00567dc083a51",
                 "shasum": ""
             },
             "require": {
@@ -187,7 +187,7 @@
                 "issues": "https://github.com/AngryMoustache/rambo/issues",
                 "source": "https://github.com/AngryMoustache/rambo/tree/master"
             },
-            "time": "2021-05-23T13:35:56+00:00"
+            "time": "2021-05-24T09:00:51+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -7847,7 +7847,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.3|^8.0"
+        "php": "^7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
