@@ -24,14 +24,14 @@ Route::get('/filter/{filter?}', [UploadController::class, 'index'])
     ->name('gallery.filter')
     ->where('filter', '.*');
 
-Route::get('/logout', LogoutController::class)
-    ->name('logout');
+// Route::get('/logout', LogoutController::class)
+//     ->name('logout');
 
-Route::get('/randomize', RandomizeController::class)
-    ->name('randomize');
+// Route::get('/randomize', RandomizeController::class)
+//     ->name('randomize');
 
-Route::get('/deviantart/pull/{id}', [DeviantartController::class, 'pull'])
-    ->name('deviantart.pull');
+// Route::get('/deviantart/pull/{id}', [DeviantartController::class, 'pull'])
+//     ->name('deviantart.pull');
 
-Route::get('/deviantart/{page?}', [DeviantartController::class, 'index'])
-    ->name('deviantart.index');
+// Route::get('/deviantart/{page?}', [DeviantartController::class, 'index'])
+//     ->name('deviantart.index');

@@ -11,10 +11,6 @@ class UploadController extends Controller
 {
     public function index($filter = null)
     {
-        if (! Auth::user()) {
-            return view('auth.login');
-        }
-
         $uploads = Upload::with('attachment')->get();
 
         return view('uploads.index', [

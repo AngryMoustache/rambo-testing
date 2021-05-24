@@ -9,10 +9,6 @@ class RandomizeController extends Controller
 {
     public function __invoke()
     {
-        if (! Auth::user()) {
-            return view('auth.login');
-        }
-
         $list = Tag::get()->groupBy('color')->map(function ($tags) {
             return $tags->random();
         })->values();
