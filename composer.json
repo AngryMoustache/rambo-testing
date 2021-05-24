@@ -8,7 +8,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.0",
+        "php": "^7.4|^8.0",
         "angry-moustache/deviantart-rss": "dev-master",
         "angry-moustache/media": "9999999-dev",
         "angry-moustache/rambo": "9999999-dev",
@@ -24,7 +24,9 @@
         "fakerphp/faker": "^1.9.1",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
-        "phpunit/phpunit": "^9.3.3"
+        "phpunit/phpunit": "^9.3.3",
+        "deployer/deployer": "^6.8",
+        "deployer/recipes": "^6.2"
     },
     "config": {
         "optimize-autoloader": true,
