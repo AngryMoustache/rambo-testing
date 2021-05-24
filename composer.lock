@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5591b52e4ebfa8b39460fbce9ad4dfdd",
+    "content-hash": "1faf44cc92002ffecd0e1dc52e9f235a",
     "packages": [
         {
             "name": "angry-moustache/deviantart-rss",
@@ -13,12 +13,6 @@
                 "type": "git",
                 "url": "https://github.com/AngryMoustache/deviantart-rss.git",
                 "reference": "b506dac7859ddeb5f11b33580b5129b9782cdde2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/AngryMoustache/deviantart-rss/zipball/b506dac7859ddeb5f11b33580b5129b9782cdde2",
-                "reference": "b506dac7859ddeb5f11b33580b5129b9782cdde2",
-                "shasum": ""
             },
             "require": {
                 "php": ">=7.4.0"
@@ -37,15 +31,10 @@
                     "AngryMoustache\\DeviantartRss\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Package for calling the DeviantArt RSS",
-            "support": {
-                "issues": "https://github.com/AngryMoustache/deviantart-rss/issues",
-                "source": "https://github.com/AngryMoustache/deviantart-rss/tree/master"
-            },
             "time": "2021-03-15T18:45:33+00:00"
         },
         {
@@ -55,12 +44,6 @@
                 "type": "git",
                 "url": "https://github.com/AngryMoustache/media.git",
                 "reference": "e075dcc7d3c504517481410cc4e4fdd7db0d2db7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/AngryMoustache/media/zipball/e075dcc7d3c504517481410cc4e4fdd7db0d2db7",
-                "reference": "e075dcc7d3c504517481410cc4e4fdd7db0d2db7",
-                "shasum": ""
             },
             "require": {
                 "php": ">=7.4.0",
@@ -80,7 +63,6 @@
                     "AngryMoustache\\Media\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -88,10 +70,6 @@
             "keywords": [
                 "laravel"
             ],
-            "support": {
-                "issues": "https://github.com/AngryMoustache/media/issues",
-                "source": "https://github.com/AngryMoustache/media/tree/master"
-            },
             "time": "2020-12-19T19:40:51+00:00"
         },
         {
@@ -101,12 +79,6 @@
                 "type": "git",
                 "url": "https://github.com/AngryMoustache/page-architect.git",
                 "reference": "24eea8db9dabe8460bebb8fe90f979eaf50add13"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/AngryMoustache/page-architect/zipball/24eea8db9dabe8460bebb8fe90f979eaf50add13",
-                "reference": "24eea8db9dabe8460bebb8fe90f979eaf50add13",
-                "shasum": ""
             },
             "require": {
                 "angry-moustache/rambo": "dev-master",
@@ -130,15 +102,10 @@
                     "AngryMoustache\\PageArchitect\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Package for making complicated pages in Rambo",
-            "support": {
-                "issues": "https://github.com/AngryMoustache/page-architect/issues",
-                "source": "https://github.com/AngryMoustache/page-architect/tree/master"
-            },
             "time": "2021-05-24T09:01:33+00:00"
         },
         {
@@ -148,12 +115,6 @@
                 "type": "git",
                 "url": "https://github.com/AngryMoustache/rambo.git",
                 "reference": "c8d3092126ea18cd7d8f4398eef00567dc083a51"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/AngryMoustache/rambo/zipball/c8d3092126ea18cd7d8f4398eef00567dc083a51",
-                "reference": "c8d3092126ea18cd7d8f4398eef00567dc083a51",
-                "shasum": ""
             },
             "require": {
                 "angry-moustache/media": "dev-master",
@@ -178,15 +139,10 @@
                     "AngryMoustache\\Rambo\\Seeders\\": "database/seeders/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Package for making forms",
-            "support": {
-                "issues": "https://github.com/AngryMoustache/rambo/issues",
-                "source": "https://github.com/AngryMoustache/rambo/tree/master"
-            },
             "time": "2021-05-24T09:00:51+00:00"
         },
         {

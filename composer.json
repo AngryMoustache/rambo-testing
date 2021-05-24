@@ -63,5 +63,23 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/AngryMoustache/rambo.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/AngryMoustache/page-architect.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/AngryMoustache/deviantart-rss.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/AngryMoustache/media.git"
+        }
+    ]
 }
