@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
+use AngryMoustache\Rambo\Facades\Rambo;
 use AngryMoustache\Rambo\Models\Administrator;
-use AngryMoustache\Rambo\RamboAuth;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         Administrator::create([
             'username' => 'admin',
             'email' => 'admin@rambo.com',
-            'password' => RamboAuth::hash('test')
+            'password' => Rambo::passwordHash('test')
         ]);
     }
 }
