@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Auth;
 use App\Http\Resources\UploadResource;
 use App\Models\Tag;
 use App\Models\Upload;

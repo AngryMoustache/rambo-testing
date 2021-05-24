@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DeviantartController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\RandomizeController;
 use App\Http\Controllers\UploadController;
 use Illuminate\Support\Facades\Route;
@@ -35,3 +36,6 @@ Route::get('/filter/{filter?}', [UploadController::class, 'index'])
 
 // Route::get('/deviantart/{page?}', [DeviantartController::class, 'index'])
 //     ->name('deviantart.index');
+
+Route::get('/{page}', PageController::class)
+    ->name('page');
