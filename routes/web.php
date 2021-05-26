@@ -1,5 +1,6 @@
 <?php
 
+use AngryMoustache\Rambo\Http\Middleware\LinkPickerRoute;
 use App\Http\Controllers\DeviantartController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\PageController;
@@ -19,9 +20,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [UploadController::class, 'index'])
+    // ->middleware([LinkPickerRoute::class])
     ->name('upload.index');
 
 Route::get('/filter/{filter?}', [UploadController::class, 'index'])
+    // ->middleware([LinkPickerRoute::class])
     ->name('gallery.filter')
     ->where('filter', '.*');
 
@@ -38,4 +41,5 @@ Route::get('/filter/{filter?}', [UploadController::class, 'index'])
 //     ->name('deviantart.index');
 
 Route::get('/{page}', PageController::class)
+    // ->middleware([LinkPickerRoute::class])
     ->name('page');

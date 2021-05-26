@@ -11,6 +11,7 @@ use AngryMoustache\Rambo\Resource\Fields\BooleanField;
 use AngryMoustache\Rambo\Resource\Fields\Button;
 use AngryMoustache\Rambo\Resource\Fields\EditorField;
 use AngryMoustache\Rambo\Resource\Fields\HabtmField;
+use AngryMoustache\Rambo\Resource\Fields\LinkPickerField;
 use AngryMoustache\Rambo\Resource\Fields\ManyAttachmentField;
 use AngryMoustache\Rambo\Resource\Fields\SelectField;
 use AngryMoustache\Rambo\Resource\Fields\TabGroup;
@@ -37,25 +38,24 @@ class Upload extends Resource
     public function fields()
     {
         return [
+            TextField::make('name')
+                ->rules('required')
+                ->sortable(),
+
+            TextField::make('slug')
+                ->sortable(),
+
             TabGroup::make()->tabs([
                 'general' => 'General',
                 'media' => 'Media',
             ])->fields([
                 'general' => [
-                    TextField::make('name')
-                        ->rules('required')
-                        ->sortable(),
-
-                    TextField::make('slug')
-                        ->sortable(),
-
                     PageArchitect::make('description')
                         ->label('Body')
                         ->hideFrom(['index']),
 
-                    TextField::make('link')
-                        ->hideFrom(['index']),
-
+                    // LinkPickerField::make('link')
+                    //     ->hideFrom(['index']),
 
                     HabtmField::make('tags')
                         ->resource(Tag::class)
