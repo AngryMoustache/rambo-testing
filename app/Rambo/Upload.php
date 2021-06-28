@@ -2,20 +2,13 @@
 
 namespace App\Rambo;
 
-use AngryMoustache\PageArchitect\Http\Livewire\PageArchitectField;
-use AngryMoustache\PageArchitect\Resource\Fields\PageArchitect;
-use AngryMoustache\Rambo\Models\Administrator as ModelsAdministrator;
-use AngryMoustache\Rambo\Rambo\Administrator;
+use AngryMoustache\PageArchitect\Resource\Fields\PageArchitectField;
 use AngryMoustache\Rambo\Resource\Fields\AttachmentField;
 use AngryMoustache\Rambo\Resource\Fields\BooleanField;
 use AngryMoustache\Rambo\Resource\Fields\Button;
-use AngryMoustache\Rambo\Resource\Fields\EditorField;
 use AngryMoustache\Rambo\Resource\Fields\HabtmField;
-use AngryMoustache\Rambo\Resource\Fields\LinkPickerField;
 use AngryMoustache\Rambo\Resource\Fields\ManyAttachmentField;
-use AngryMoustache\Rambo\Resource\Fields\SelectField;
 use AngryMoustache\Rambo\Resource\Fields\TabGroup;
-use AngryMoustache\Rambo\Resource\Fields\TextareaField;
 use AngryMoustache\Rambo\Resource\Fields\TextField;
 use AngryMoustache\Rambo\Resource\Fields\YoutubeField;
 use AngryMoustache\Rambo\Resource\Filters\OnlineFilter;
@@ -45,39 +38,30 @@ class Upload extends Resource
             TextField::make('slug')
                 ->sortable(),
 
-            TabGroup::make()->tabs([
-                'general' => 'General',
-                'media' => 'Media',
-            ])->fields([
-                'general' => [
-                    PageArchitect::make('description')
-                        ->label('Body')
-                        ->hideFrom(['index']),
+            PageArchitectField::make('description')
+                ->label('Body')
+                ->hideFrom(['index']),
 
-                    // LinkPickerField::make('link')
-                    //     ->hideFrom(['index']),
+            // LinkPickerField::make('link')
+            //     ->hideFrom(['index']),
 
-                    HabtmField::make('tags')
-                        ->resource(Tag::class)
-                        ->hideFrom(['index']),
+            HabtmField::make('tags')
+                ->resource(Tag::class)
+                ->hideFrom(['index']),
 
-                    BooleanField::make('spotlight')
-                        ->sortable(),
-                ],
+            BooleanField::make('spotlight')
+                ->sortable(),
 
-                'media' => [
-                    AttachmentField::make('attachment_id')
-                        ->label('Attachment')
-                        ->rules('required'),
+            AttachmentField::make('attachment_id')
+                ->label('Attachment')
+                ->rules('required'),
 
-                    ManyAttachmentField::make('variants')
-                        ->hideFrom(['index']),
+            ManyAttachmentField::make('variants')
+                ->hideFrom(['index']),
 
-                    YoutubeField::make('youtube_id')
-                        ->label('Youtube video')
-                        ->hideFrom(['index']),
-                ],
-            ]),
+            YoutubeField::make('youtube_id')
+                ->label('Youtube video')
+                ->hideFrom(['index']),
 
             BooleanField::make('online')
                 ->sortable(),

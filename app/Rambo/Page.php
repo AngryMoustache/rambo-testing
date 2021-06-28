@@ -2,10 +2,9 @@
 
 namespace App\Rambo;
 
-use AngryMoustache\PageArchitect\Resource\Fields\PageArchitect;
+use AngryMoustache\PageArchitect\Resource\Fields\PageArchitectField;
 use AngryMoustache\Rambo\Resource\Fields\BooleanField;
 use AngryMoustache\Rambo\Resource\Fields\Button;
-use AngryMoustache\Rambo\Resource\Fields\EditorField;
 use AngryMoustache\Rambo\Resource\Fields\TextField;
 use AngryMoustache\Rambo\Resource\Resource;
 use AngryMoustache\Rambo\Resource\Traits\Sluggable;
@@ -32,7 +31,7 @@ class Page extends Resource
             TextField::make('slug')
                 ->sortable(),
 
-            PageArchitect::make('body')
+            PageArchitectField::make('body')
                 ->hideFrom(['index', 'show']),
 
             BooleanField::make('online')
